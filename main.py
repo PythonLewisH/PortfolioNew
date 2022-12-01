@@ -2,11 +2,15 @@ from flask import Flask, render_template, redirect, url_for, flash, request
 import os
 from forms import ContactForm
 import smtplib
+from flask_talisman import Talisman
 
 
 # Run Flask App
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY", "MySecretKey")
+
+# Wrap Flask app with Talisman
+Talisman(app, content_security_policy=None)
 
 
 @app.route('/', methods=["GET", "POST"])
