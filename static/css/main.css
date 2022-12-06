@@ -201,6 +201,47 @@ width: 15%;
     color: black;
     }
 
+.center-text {
+text-align: center;
+padding-bottom: 50px;
+}
+
+.flex-box {
+display: flex;
+justify-content: center;
+}
+
+.flex-box p {
+padding: 0 40px;
+font-weight: 600;
+}
+
+
+
+nav {
+  position: relative;
+  top: -80px;
+}
+
+.contact-button {
+  background-color: rgba(0,152,155,1);
+  border-radius: 10px;
+  border: 1px white solid;
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+  margin: 25px;
+}
+
+a.contact-button {
+text-decoration:none;
+}
+
+.contact-button:hover {
+  cursor: pointer;
+
+}
+
 /* Container */
 
 	.container {
@@ -249,6 +290,10 @@ width: 15%;
 
 			.container {
 				width: 90% !important;
+			}
+
+			nav {
+			top: -30px;
 			}
 
 		}
@@ -2808,7 +2853,7 @@ width: 15%;
 
 			#header a:hover {
 				border-bottom-color: transparent;
-				color: #4eb980;
+				color: white;
 			}
 
 		#header strong, #header b {

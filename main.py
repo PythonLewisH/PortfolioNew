@@ -48,9 +48,5 @@ def home():
             return render_template("index.html", contact_form=contact_form)
 
 
-
-
-
-
 if __name__ == "__main__":
     app.run()

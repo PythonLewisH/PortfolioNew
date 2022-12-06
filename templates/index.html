@@ -26,9 +26,14 @@
 
 		<!-- Header -->
 			<div id="header">
+								<nav class="flex-box">
+				<p><a class="link" href="#Portfolio">Portfolio</a></p>  <p><a class="link" href="#Testimonials">Testimonials</a></p>  <p><a class="link" href="#Services">Services</a></p>
+				</nav>
 				<img class="profile-image" src="../static/assets/images/Me.png" alt="Lewis Hudson"></img>
 				<h1>Lewis Hudson</h1>
 				<p>Web Design and Development based out of Wellington, NZ</p>
+				<button class="contact-button" onclick="window.location='#Contact'">Make an enquiry</button>
+
 
 					{% with messages = get_flashed_messages() %}
         {% if messages %}
@@ -65,7 +70,7 @@
 							<h1 class="benefits-title">Clear, transparent pricing</h1>
 						</header>
 						<ol class="default benefits">
-							<li>We offer carefully curated websites with a transparent and clear pricing structure, so you know the costs up front.</li>
+							<li>We offer carefully curated websites with a transparent and clear pricing structure based on your requirementst, so you know the costs up front.</li>
 						</ol>
 						<header>
 							<i class="benefits-logo fa-solid fa-shop"></i>
@@ -79,7 +84,7 @@
 
 				
 
-				<header class="major container medium">
+				<header class="major container medium" id="Portfolio">
 					<h3>Our Portfolio</h3>
 													<hr>
 
@@ -111,7 +116,7 @@
 <!--					</section>-->
 				</div>
 
-				<header class="major container medium">
+				<header class="major container medium" id="Testimonials">
 					<h3>Testimonials</h3>
 														<hr>
 
@@ -136,13 +141,44 @@
 					</section>
 				</div>
 
+<header class="container medium" id="Services">
+
+<h3>Services</h3>
+									<hr>
+
+
+<br>
+
+					<section>
+						<ul>
+							<li>Website design and development </li>
+							<li>E-commerce solutions </li>
+							<li>Content management systems </li>
+							<li>Responsive web design </li>
+							<li>Search engine optimization (SEO) </li>
+							<li>Social media integration </li>
+							<li>Web app development </li>
+							<li>Maintenance and support </li>
+						</ul>
+					</section>
+
+
+				</header>
+
+				<div class="container">
+
+					<p class="center-text">I would be happy to discuss your project in more detail and provide a personalized quote
+							based on your needs. <br> Please contact me below to get started.</p>
+				</div>
+
+
 
 
 			</div>
 
 		<!-- Footer -->
 			<div id="footer">
-				<div class="container medium">
+				<div class="container medium" id="Contact">
 
 					<header class="major last">
 						<h2>Make an enquiry</h2>
