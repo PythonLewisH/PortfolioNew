@@ -12,6 +12,7 @@ app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY", "MySecretKey")
 # Wrap Flask app with Talisman
 Talisman(app, content_security_policy=None)
 
+#
 
 @app.route('/', methods=["GET", "POST"])
 def home():
